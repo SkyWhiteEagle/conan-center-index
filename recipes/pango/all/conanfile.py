@@ -1,7 +1,8 @@
 import os
 import glob
 
-from conans import tools, Meson, VisualStudioBuildEnvironment
+from conan.tools.meson import Meson
+from conans import VisualStudioBuildEnvironment
 from conan import ConanFile
 from conan.tools.scm import Version
 from conan.tools.files import get, replace_in_file, chdir, rmdir, rm, rename
